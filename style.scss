@@ -1,29 +1,48 @@
-/* reikamoon css framework */
+// reikamoon's css framework
 @import url(https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Exo:wght@300&family=Orbitron&family=Quicksand:wght@300&display=swap);
 
-:root {
-    --color-bg: rgb(20,20,20);
-    --color-fg: whitesmoke;
-    --color-primary: deeppink;
-    --color-secondary: rgb(3, 155, 216);
-}
+// Colors
+$blackbg: rgb(20,20,20);
+$black: rgb(10, 10, 10);
+$white: whitesmoke;
+$pink: deeppink;
+$dark-pink: rgb(158, 15, 98);
+$pink-variant: rgb(219, 27, 139);
+$blue: rgb(3, 155, 216);
+$dark-blue: rgb(8, 58, 78);
+$eggshell: rgb(219, 219, 219);
+$dark-red: rgb(163, 13, 13);
+$red: rgb(248, 67, 67);
+$midnight: rgb(0, 0, 0);
+
+// Fonts
+$orbit: 'Orbitron', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+$exo: 'Exo', sans-serif;
+$chakra: 'Chakra Petch', sans-serif;
+
+//Shadows
+$pink-shadow: 2px 2px deepink;
+$black-shadow: 2px 2px rgb(10, 10, 10);
+$blue-shadow: 2px 2px rgb(3, 155, 216);
+
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-fg);
+    background-color: $blackbg;
+    color: $white;
     margin: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 40px;
 }
 
 h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 2px 2px var(--color-primary);
+    font-family: $orbit;
+    text-shadow: $pink-shadow;
 }
 
 hr {
     border-top: 1px solid;
-    border-color: var(--color-fg);
+    border-color: $white;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -41,26 +60,26 @@ h3 {
 }
 
 p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: $quicksand;
     font-size: 25px;
 }
 
 a {
-    font-family: 'Exo', sans-serif;
+    font-family: $exo;
     font-size: 25px;
 }
 
 a:link {
-    color: var(--color-primary);
+    color: $pink;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--color-secondary);
+    color: $blue;
 }
 
 b {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
 }
 
 li {
@@ -70,16 +89,6 @@ li {
 .bowli {
     list-style-type: "\1F380";
 }
-
-th {
-    font-family: "Quicksand", sans-serif;
-}
-
-td{
-    font-family: "Quicksand", sans-serif;
-}
-
-
 
 /* Titles */
 .title {
@@ -96,13 +105,13 @@ td{
 }
 
 .headingsblue {
-    text-shadow: 2px 2px var(--color-secondary);
+    text-shadow: $blue-shadow;
 }
 
 /* Navbar */
 
 .navbar {
-    background-color: var(--color-primary);
+    background-color: $pink;
     overflow: hidden;
     border: 1px solid;  
     border-radius: 25px;
@@ -110,31 +119,30 @@ td{
 }
 
 .navbar a {
-    color: var(--color-fg);
+    color: $white;
     font-size: 24px;
     text-decoration: none;
     padding: 20px;
     text-align: center;
-    text-shadow: 2px 2px rgb(22, 22, 22);
+    text-shadow: $black-shadow;
 }
 
 .navbar a:hover {
-    background-color: var(--color-fg);
-    color: var(--color-bg);
-    text-shadow: 1px 1px var(--color-primary);
+    background-color: $white;
+    color: $black;
+    text-shadow: $pink-shadow;
 }
 
 .navbar a:hover.active {
-    color: var(--color-primary);
-    text-shadow: 1px 1px var(--color-bg);
+    color: $pink;
+    text-shadow: $black-shadow;
 }
 
 .navbar a.active {
     text-decoration: underline;
-    color: var(--color-fg);
-    text-shadow: 2px 2px rgb(10, 10, 10);
+    color: $white;
+    text-shadow: $black-shadow;
 }
-
 
 /* Articles */
 
@@ -142,7 +150,7 @@ td{
    display: grid;
    grid-template-areas: 
    "a b c";
-   grid-gap: 20px
+   grid-gap: 20px;
 }
 
 .articles h3, p {
@@ -171,7 +179,7 @@ td{
 }
 
 li {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 21px;
 }
 
@@ -184,235 +192,235 @@ li {
     "t y u";
     align-content: center;
     justify-content: center;
-    grid-gap: 10px
+    grid-gap: 10px;
 }
 
 .cardA {
-    background-color: var(--color-primary);
-    color: var(--color-fg);
+    background-color: $pink;
+    color: $white;
     grid-area: q;
     padding: 5px;
     border-radius: 20px;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid $blue;
     margin-bottom: 0;
 }
 
 .cardA h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardA p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 .cardB {
-    background-color: var(--color-secondary);
-    color: var(--color-fg);
+    background-color: $blue;
+    color: $white;
     grid-area: w;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid var(--color-fg);
+    border: 2px solid $white;
     margin-bottom: 0;
 }
 
 .cardB h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     text-shadow: none;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardB p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 .cardC {
-    background-color: rgb(219, 219, 219);
-    color: var(--color-primary);
+    background-color: $eggshell;
+    color: $pink;
     border-radius: 25px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid $pink;
     grid-area: r;
     padding: 20px;
     margin-bottom: 0;
 }
 
 .cardC h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     text-shadow: none;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardC p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 .cardD {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
+    background-color: $pink;
+    color: $black;
     border-radius: 25px;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid $blue;
     grid-area: t;
     padding: 20px;
     margin-bottom: 0;
 }
 
 .cardD h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     text-shadow: none;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardD p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 .cardE {
-    background-color: rgb(3, 155, 216);
-    color: rgb(22, 22, 22);
+    background-color: $blue;
+    color: $black;
     border-radius: 25px;
-    border: 2px solid whitesmoke;
+    border: 2px solid $white;
     grid-area: y;
     padding: 20px;
     margin-bottom: 0;
 }
 
 .cardE h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     text-shadow: none;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardE p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 .cardF {
-    background-color: rgb(19, 15, 15);
-    color: deeppink;
+    background-color: $black;
+    color: $pink;
     border-radius: 25px;
-    border: 2px solid deeppink;
+    border: 2px solid $pink;
     grid-area: u;
     padding: 20px;
     margin-bottom: 0;
 }
 
 .cardF h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     text-shadow: none;
     font-size: 30px;
     text-decoration: underline;
 }
 
 .cardF p {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
 }
 
 /* Buttons */
 
 button {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: deeppink;
-    color: whitesmoke;
+    font-family: $chakra;
+    background-color: $pink;
+    color: $white;
     font-size: 20px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: whitesmoke;
+    border-color: $white;
     padding: 10px;
 }
 
 .button2 {
-    background-color: rgb(3, 155, 216);
-    color: whitesmoke;
+    background-color: $blue;
+    color: $white;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: whitesmoke;
+    border-color: $white;
 }
 
 .button3 {
-    background-color: rgb(219, 219, 219);
-    color: rgb(219, 27, 139);
+    background-color: $eggshell;
+    color: $pink-variant;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: deeppink;
+    border-color: $pink;
 }
 
 .button4 {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: deeppink;
-    color: rgb(22, 22, 22);
+    font-family: $chakra;
+    background-color: $pink;
+    color: $blackbg;
     font-size: 20px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(22, 22, 22);
+    border-color: $blackbg;
     padding: 10px;
 }
 
 .button5 {
-    background-color: rgb(3, 155, 216);
-    color: rgb(22, 22, 22);
+    background-color: $blue;
+    color: $black;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(22, 22, 22);
+    border-color: $black;
 }
 
 .button6 {
-    background-color: rgb(19, 15, 15);
-    color: rgb(3, 155, 216);
+    background-color: $black;
+    color: $blue;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(3, 155, 216);
+    border-color: $blue;
 }
 
 .button6 {
-    background-color: rgb(19, 15, 15);
-    color: rgb(3, 155, 216);
+    background-color: $black;
+    color: $blue;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(3, 155, 216);
+    border-color: $blue;
 }
 
 .button7 {
-    background-color: rgb(19, 15, 15);
-    color: deeppink;
+    background-color: $black;
+    color: $pink;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    border-color: deeppink;
+    border-color: $pink;
 }
 
 
 .dangerbutton {
-    background-color: rgb(163, 13, 13);
-    color: whitesmoke;
+    background-color: $dark-red;
+    color: $white;
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 0 0 5px rgb(248, 67, 67);
+    border-color: $midnight;
+    box-shadow: 0 0 5px $red;
 }
 
 /* Flexbox */
@@ -422,11 +430,11 @@ button {
 }
 
 .flexbox > div {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: $chakra;
     color: whitesmoke;
-    border: 3px solid whitesmoke;
+    border: 3px solid $white;
     border-radius: 24px;
-    text-shadow: 2px 2px deeppink;
+    text-shadow: $pink-shadow;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -434,7 +442,7 @@ button {
 }
 
 .flexbox > div:nth-child(even) {
-    text-shadow: 2px 2px rgb(3, 155, 216);
+    text-shadow: $blue-shadow;
 }
 
 /* Grids */
@@ -449,15 +457,15 @@ button {
 }
 
 .grid2x2 > div {
-    background-color: rgb(22, 22, 22);
-    color: whitesmoke;
-    text-shadow: 2px 2px deeppink;
-    font-family: "Quicksand", sans-serif;
+    background-color: $blackbg;
+    color: $white;
+    text-shadow: $pink-shadow;
+    font-family:$quicksand;
     font-size: 30px;
     padding: 10px;
     text-align: center;
     border: 2px solid;
-    border-color: whitesmoke;
+    border-color: $white;
 }
 
 .grid2x2 > div:nth-child(even) {
@@ -475,39 +483,39 @@ button {
 }
 
 .grid3x3 > div {
-    background-color: deeppink;
-    color: whitesmoke;
+    background-color: $pink;
+    color: $white;
     padding-top: 20px;
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 30px;
     text-align: center;
 }
 
 /* Forms */
 input{
-    font-family: "Chakra Petch";
+    font-family: $chakra;
     font-size: 20px;
 
 }
 
 label {
-    font-family: "Chakra Petch";
+    font-family: $chakra;
     font-size: 25px;
-    color: whitesmoke;
+    color: $white;
 }
 
 
 input[type=text] {
     border-radius: 10px;
-    border-color: deeppink;
-    background-color: rgb(20, 20, 20);
+    border-color: $pink;
+    background-color: $blackbg;
     color: whitesmoke;
     padding: 12px 20px;
     display: inline-block;
     box-sizing: border-box;
     margin-bottom: 10px;
 
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
     width: 50%;
 
@@ -515,36 +523,36 @@ input[type=text] {
 
 input[type=number] {
     border-radius: 10px;
-    border-color: deeppink;
-    background-color: rgb(20, 20, 20);
-    color: whitesmoke;
+    border-color: $pink;
+    background-color: $blackbg;
+    color: $white;
     padding: 10px;
     margin-bottom: 10px;
 
-    font-family: "Chakra Petch";
+    font-family: $pink;
     font-size: 20px;
 }
 
 input[type=date] {
     border-radius: 10px;
-    border-color: deeppink;
-    background-color: rgb(20, 20, 20);
+    border-color: $pink;
+    background-color: $blackbg;
     color: whitesmoke;
     padding: 10px;
     margin-bottom: 10px;
 
-    font-family: "Chakra Petch";
+    font-family: $chakra;
     font-size: 20px;
 }
 
 input[type=radio] {
-    font-family: "Quicksand", sans-serif;
+    font-family: $quicksand;
     font-size: 20px;
     text-shadow: none;
 }
 
 input[type=submit] {
-    background-color: deeppink;
+    background-color: $pink;
     color: whitesmoke;
     padding: 14px 20px;
     border: none;
@@ -554,11 +562,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: rgb(158, 15, 98);
+    background-color: $dark-pink;
 }
 
 input[type="reset"] {
-    background-color: rgb(3, 155, 216);
+    background-color: $blue;
     color: whitesmoke;
     padding: 14px 20px;
     border: none;
@@ -567,5 +575,10 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
-    background-color: rgb(8, 58, 78);
+    background-color: $dark-blue;
 }
+
+
+
+
+

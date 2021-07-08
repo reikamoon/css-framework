@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Exo:wght@300&family=Orbitron&family=Quicksand:wght@300&display=swap);
+body {
+  background-color: #141414;
+  color: whitesmoke;
+  margin: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+}
+
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 2px 2px deepink;
+}
+
+hr {
+  border-top: 1px solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+
+a {
+  font-family: "Exo", sans-serif;
+  font-size: 25px;
+}
+
+a:link {
+  color: deeppink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #039bd8;
+}
+
+b {
+  font-family: "Quicksand", sans-serif;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.bowli {
+  list-style-type: "🎀";
+}
+
+/* Titles */
+.title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.headings {
+  text-align: center;
+}
+
+.headingsblue {
+  text-shadow: 2px 2px #039bd8;
+}
+
+/* Navbar */
+.navbar {
+  background-color: deeppink;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.navbar a {
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px #0a0a0a;
+}
+
+.navbar a:hover {
+  background-color: whitesmoke;
+  color: #0a0a0a;
+  text-shadow: 2px 2px deepink;
+}
+
+.navbar a:hover.active {
+  color: deeppink;
+  text-shadow: 2px 2px #0a0a0a;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  color: whitesmoke;
+  text-shadow: 2px 2px #0a0a0a;
+}
+
+/* Articles */
+.articles {
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-gap: 20px;
+}
+
+.articles h3, p {
+  text-align: center;
+}
+
+.article1 {
+  grid-area: a;
+}
+
+.article2 {
+  grid-area: b;
+}
+
+.article3 {
+  grid-area: c;
+}
+
+/* List */
+.list {
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
+}
+
+li {
+  font-family: "Quicksand", sans-serif;
+  font-size: 21px;
+}
+
+/* Cards */
+.gridforcards {
+  display: grid;
+  grid-template-areas: "q w r" "t y u";
+  align-content: center;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.cardA {
+  background-color: deeppink;
+  color: whitesmoke;
+  grid-area: q;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid #039bd8;
+  margin-bottom: 0;
+}
+
+.cardA h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardA p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.cardB {
+  background-color: #039bd8;
+  color: whitesmoke;
+  grid-area: w;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  margin-bottom: 0;
+}
+
+.cardB h3 {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: none;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardB p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.cardC {
+  background-color: #dbdbdb;
+  color: deeppink;
+  border-radius: 25px;
+  border: 2px solid deeppink;
+  grid-area: r;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.cardC h3 {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: none;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardC p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.cardD {
+  background-color: deeppink;
+  color: #0a0a0a;
+  border-radius: 25px;
+  border: 2px solid #039bd8;
+  grid-area: t;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.cardD h3 {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: none;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardD p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.cardE {
+  background-color: #039bd8;
+  color: #0a0a0a;
+  border-radius: 25px;
+  border: 2px solid whitesmoke;
+  grid-area: y;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.cardE h3 {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: none;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardE p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.cardF {
+  background-color: #0a0a0a;
+  color: deeppink;
+  border-radius: 25px;
+  border: 2px solid deeppink;
+  grid-area: u;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.cardF h3 {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: none;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cardF p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+/* Buttons */
+button {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: deeppink;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: whitesmoke;
+  padding: 10px;
+}
+
+.button2 {
+  background-color: #039bd8;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: whitesmoke;
+}
+
+.button3 {
+  background-color: #dbdbdb;
+  color: #db1b8b;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: deeppink;
+}
+
+.button4 {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: deeppink;
+  color: #141414;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #141414;
+  padding: 10px;
+}
+
+.button5 {
+  background-color: #039bd8;
+  color: #0a0a0a;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #0a0a0a;
+}
+
+.button6 {
+  background-color: #0a0a0a;
+  color: #039bd8;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #039bd8;
+}
+
+.button6 {
+  background-color: #0a0a0a;
+  color: #039bd8;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #039bd8;
+}
+
+.button7 {
+  background-color: #0a0a0a;
+  color: deeppink;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: deeppink;
+}
+
+.dangerbutton {
+  background-color: #a30d0d;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: black;
+  box-shadow: 0 0 5px #f84343;
+}
+
+/* Flexbox */
+.flexbox {
+  display: flex;
+}
+
+.flexbox > div {
+  font-family: "Chakra Petch", sans-serif;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 24px;
+  text-shadow: 2px 2px deepink;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.flexbox > div:nth-child(even) {
+  text-shadow: 2px 2px #039bd8;
+}
+
+/* Grids */
+.grid2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c d";
+}
+
+.grid2x2 > div {
+  background-color: #141414;
+  color: whitesmoke;
+  text-shadow: 2px 2px deepink;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid;
+  border-color: whitesmoke;
+}
+
+.grid2x2 > div:nth-child(even) {
+  text-shadow: 2px 2px #039bd8;
+}
+
+.grid3x3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas: "a b c" "c d e";
+}
+
+.grid3x3 > div {
+  background-color: deeppink;
+  color: whitesmoke;
+  padding-top: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Forms */
+input {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 20px;
+}
+
+label {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+input[type=text] {
+  border-radius: 10px;
+  border-color: deeppink;
+  background-color: #141414;
+  color: whitesmoke;
+  padding: 12px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  width: 50%;
+}
+
+input[type=number] {
+  border-radius: 10px;
+  border-color: deeppink;
+  background-color: #141414;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: deeppink;
+  font-size: 20px;
+}
+
+input[type=date] {
+  border-radius: 10px;
+  border-color: deeppink;
+  background-color: #141414;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 20px;
+}
+
+input[type=radio] {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+input[type=submit] {
+  background-color: deeppink;
+  color: whitesmoke;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #9e0f62;
+}
+
+input[type=reset] {
+  background-color: #039bd8;
+  color: whitesmoke;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #083a4e;
+}
+
+/*# sourceMappingURL=style.css.map */
